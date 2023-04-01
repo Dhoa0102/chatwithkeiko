@@ -84,9 +84,9 @@
         // Create li element
         const li = document.createElement("li");
         // Create text node and append to li
-        li.appendChild(document.createTextNode(data.name));
+        li.prepend(document.createTextNode(data.name));
         // Append li to list
-        list.appendChild(li);
+        list.prepend(li);
       });
     </script>
 </body>
